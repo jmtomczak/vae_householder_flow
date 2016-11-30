@@ -33,3 +33,8 @@ Please cite our paper if you use this code in your research:
   year={2016}
 }
 ```
+
+## Acknowledgments
+The research conducted by Jakub M. Tomczak was funded by the European Commission within the Marie Skłodowska-Curie Individual Fellowship (Grant No. 702666, ”Deep learning and Bayesian inference for medical imaging”).
+
+I am very grateful to [Szymon Zaręba](https://www.ii.pwr.edu.pl/~szymon.zareba/) who prepared the first version of the framework for VAEs using code provided by [Jan Hendrik Metzen](https://jmetzen.github.io/2015-11-27/vae.html). [Szymon](https://www.ii.pwr.edu.pl/~szymon.zareba/) helped me to develop the framework at its early stage.
