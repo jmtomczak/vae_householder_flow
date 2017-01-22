@@ -1,0 +1,17 @@
+(iutils.configuration
+Config
+p0
+(dp1
+S'path'
+p2
+S"snapshots/VAE_T=1|300,'softplus',300,'softplus'|300,'softplus',300,'softplus'|latent_dim_40|none_0|learning_rate_0.0002|rep_2"
+p3
+sS'model'
+p4
+S'VAE_T=1'
+p5
+sS'model_name'
+p6
+S"VAE_T=1|300,'softplus',300,'softplus'|300,'softplus',300,'softplus'|latent_dim_40|none_0|learning_rate_0.0002|num_params_1128904|"
+p7
+sb.
