@@ -37,3 +37,6 @@ Please cite our paper if you use this code in your research:
 The research conducted by Jakub M. Tomczak was funded by the European Commission within the Marie Skłodowska-Curie Individual Fellowship (Grant No. 702666, ”Deep learning and Bayesian inference for medical imaging”).
 
 I am very grateful to [Szymon Zaręba](https://www.ii.pwr.edu.pl/~szymon.zareba/) who helped me to develop the framework at its early stage.
+
+## REMARK
+Our previous implementation of the Householder Flow was buggy. In order to avoid possible bugs we used Keras. Please take a look at the new version of the paper for new (corrected) results.
