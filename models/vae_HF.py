@@ -1,5 +1,7 @@
 import os
 
+import numpy as np
+
 from keras.layers import Input, Dense, Lambda, Merge
 from keras.models import Model
 from keras import backend as K
@@ -122,7 +124,7 @@ def build_vae_HF(config):
             RE = K.mean(K.sum(re_loss, axis=1), axis=0)
         elif config.data_type == 'gray':
             re_loss = log_Normal_diag(x, x_decoded_mean, x_decoded_log_var)
-            RE = K.mean(K.sum(re_loss, axis=1), axis=0)
+            RE = K.mean(K.sum(re_loss, axis=1), axis=0) + 0.5*config.original_dim*np.log(2*np.pi)
         else:
             raise ValueError
 
@@ -148,7 +150,7 @@ def build_vae_HF(config):
             RE = K.mean(K.sum(re_loss, axis=1), axis=0)
         elif config.data_type == 'gray':
             re_loss = log_Normal_diag(x, x_decoded_mean, x_decoded_log_var)
-            RE = K.mean(K.sum(re_loss, axis=1), axis=0)
+            RE = K.mean(K.sum(re_loss, axis=1), axis=0) + 0.5*config.original_dim*np.log(2*np.pi)
         else:
             raise ValueError
         return -RE
